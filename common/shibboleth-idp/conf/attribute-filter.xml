@@ -14,9 +14,9 @@
         xsi:schemaLocation="urn:mace:shibboleth:2.0:afp http://shibboleth.net/schema/idp/shibboleth-afp.xsd">
 
     <!-- Release some attributes to an SP. -->
-    <AttributeFilterPolicy id="releaseToPass">
+    <AttributeFilterPolicy id="releaseToArchive">
     
-        <PolicyRequirementRule xsi:type="Requester" value="https://sp.pass/shibboleth" />
+        <PolicyRequirementRule xsi:type="Requester" value="https://sp.archive/shibboleth" />
         
         <AttributeRule attributeID="eduPersonPrincipalName">
             <PermitValueRule xsi:type="ANY" />
